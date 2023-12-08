@@ -1,20 +1,13 @@
-import { PrismaClient } from "@prisma/client";
+import useQuiosco from "@/hooks/useQuiosco";
 
-export default function Home({ categorias, productos }) {
-  console.log(categorias);
-  console.log(productos);
-  return <h1>Next js</h1>;
+export default function Home() {
+  const { categoriaActual } = useQuiosco();
+  return (
+    <>
+      <h1 className="text-4xl font-black">{categoriaActual.Cat_Nombre}</h1>
+      <p className="text-2xl my-10">
+        Elige y personaliza tu pedido a continuación.
+      </p>
+    </>
+  );
 }
-
-export const getServerSideProps = async () => {
-  const prisma = new PrismaClient();
-  const categorias = await prisma.categoria.findMany();
-  const productos = await prisma.producto.findMany();
-
-  return {
-    props: {
-      categorias,
-      productos,
-    },
-  };
-};
