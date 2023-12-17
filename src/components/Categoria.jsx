@@ -20,7 +20,7 @@ function Categoria({ categoria }) {
       />
       <button
         type="button"
-        className="text-2xl font-bold hover:cursor-pointer"
+        className="text-lg lg:text-2xl font-bold hover:cursor-pointer"
         onClick={() => handleCategoriaActual(Cat_Id)}
       >
         {Cat_Nombre}

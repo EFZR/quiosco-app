@@ -13,7 +13,7 @@ model Producto {
   Prod_Precio Float
   Prod_Imagen String
   Categoria   Categoria @relation(fields: [Prod_CatId], references: [Cat_Id])
-  Prod_CatId      Int
+  Prod_CatId  Int
 }
 
 model Categoria {

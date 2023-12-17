@@ -9,14 +9,14 @@ function Sidebar() {
       <Image
         width={500}
         height={500}
-        className="w-auto h-auto p-5"
+        className="w-72 h-auto mx-auto my-5"
         src="/assets/img/logo.svg"
         alt="logo"
         priority
       />
       <nav className="mt-10">
         {categorias.map((categoria) => (
-          <Categoria key={categoria.Cat_Id} categoria={categoria}></Categoria>
+          <Categoria key={categoria.Cat_Id} categoria={categoria} />
         ))}
       </nav>
     </>
