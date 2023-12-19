@@ -6,6 +6,7 @@
 - [npm](https://www.npmjs.com/)
 - [MySQL](https://www.mysql.com/)
 - [Prisma](https://www.prisma.io/)
+- [SWR](https://swr.vercel.app/)
 
 ## 🛠️ Installation
 
