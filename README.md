@@ -35,3 +35,14 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 🎈 Endpoints
+
+- [http://localhost:3000](http://localhost:3000) - Home
+- [http://localhost:3000/resumen](http://localhost:3000/resumen) - Resumen
+- [http://localhost:3000/total](http://localhost:3000/total) - Total
+- [http://localhost:3000/admin](http://localhost:3000/admin) - Admin
+
+## 🚀 Deployment
+
+The project is deployed with railway: <https://quiosco-app-production-5edc.up.railway.app/> Go check it out!
